@@ -70,11 +70,11 @@
     ],
     "pint:check": "pint --test --ansi",
     "pint:fix": "pint --ansi",
+    "phpstan:check": "phpstan analyse --memory-limit=3G --ansi",
     "check": [
       "@pint:check",
       "@phpstan:check"
     ],
-    "phpstan:check": "phpstan analyse --memory-limit=3G --ansi",
     "fix": [
       "@pint:fix"
     ]
