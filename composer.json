@@ -18,6 +18,7 @@
   "require-dev": {
     "barryvdh/laravel-debugbar": "^3.15",
     "fakerphp/faker": "^1.23",
+    "larastan/larastan": "^3.0",
     "laravel/pail": "^1.2.2",
     "laravel/pint": "^1.18",
     "laravel/sail": "^1.41",
@@ -70,8 +71,10 @@
     "pint:check": "pint --test --ansi",
     "pint:fix": "pint --ansi",
     "check": [
-      "@pint:check"
+      "@pint:check",
+      "@phpstan:check"
     ],
+    "phpstan:check": "phpstan analyse --memory-limit=3G --ansi",
     "fix": [
       "@pint:fix"
     ]

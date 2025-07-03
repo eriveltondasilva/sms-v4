@@ -1,0 +1,22 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/nesbot/carbon/extension.neon
+
+parameters:
+
+    paths:
+        - app/
+
+    # Level 10 is the highest level
+    level: 5
+
+    # Ajuda a PHPStan entender helpers Laravel
+    scanFiles:
+        - vendor/laravel/framework/src/Illuminate/Foundation/helpers.php
+        - vendor/laravel/framework/src/Illuminate/Support/helpers.php
+
+    ignoreErrors:
+        - '#PHPDoc tag @var#'
+#
+#    excludePaths:
+#        - ./*/*/FileToBeExcluded.php
