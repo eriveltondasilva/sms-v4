@@ -1,13 +1,18 @@
 {
-    "semi": true,
+    "semi": false,
     "singleQuote": true,
+    "experimentalTernaries": true,
     "singleAttributePerLine": false,
+    "jsxSingleQuote": true,
+
     "htmlWhitespaceSensitivity": "css",
-    "printWidth": 150,
-    "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
-    "tailwindFunctions": ["clsx", "cn"],
+    "printWidth": 100,
     "tailwindStylesheet": "resources/css/app.css",
-    "tabWidth": 4,
+    "tabWidth": 2,
+
+    "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
+    "tailwindFunctions": ["clsx", "cn", "twJoin", "twMerge"],
+
     "overrides": [
         {
             "files": "**/*.yml",
